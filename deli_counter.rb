@@ -19,5 +19,10 @@ def line(queue)
 end
 
 def now_serving(queue)
-  queue.shift
+  if queue.length > 0
+    next_person = queue.shift
+    puts next_person
+  else
+    puts "There is nobody waiting to be served!"
+  end
 end
