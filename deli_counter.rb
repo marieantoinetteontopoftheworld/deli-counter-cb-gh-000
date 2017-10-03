@@ -20,8 +20,8 @@ end
 
 def now_serving(queue)
   if queue.length > 0
-    #puts queue[0]
-    puts queue.shift
+    puts queue[0]
+    queue.shift
   else
     puts "There is nobody waiting to be served!"
   end
