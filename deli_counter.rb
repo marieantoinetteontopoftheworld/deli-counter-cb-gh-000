@@ -9,7 +9,7 @@ end
 def line(queue)
   output_string = "The line is currently:"
   queue.each_with_index do |person, place|
-    output_string << " " + place + ". " + person
+    output_string += " " + place + ". " + person
   end
   return output_string
 end
