@@ -21,7 +21,7 @@ end
 def now_serving(queue)
   if queue.length > 0
     next_person = queue.shift
-    puts "Currently serving " << next_person
+    puts "Currently serving #{next_person}."
   else
     puts "There is nobody waiting to be served!"
   end
