@@ -13,14 +13,15 @@ def line(queue)
       output_string << " #{place + 1}. #{person}"
     end
   else
-    output_string = "Nobody in the queue."
+    output_string = "The line is currently empty."
   end
-  return output_string
+  puts output_string
 end
 
 def now_serving(queue)
   if queue.length > 0
-    puts queue[0]
+    #puts queue[0]
+    puts queue.shift
   else
     puts "There is nobody waiting to be served!"
   end
